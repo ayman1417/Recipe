@@ -1,0 +1,121 @@
+@use "variables" as *;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.meal-setion {
+    padding: 40px;
+
+    h1 {
+        font-size: 48px;
+        font-family: "Pacifico", cursive;
+        font-weight: bold
+    }
+
+    .content {
+        .img-content {
+
+            .img-container {
+                width: 100%;
+
+                img {
+                    border-radius: 3%;
+                    width: 100%;
+                }
+            }
+
+            .links {
+                margin: auto;
+                margin-top: 10px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+
+                .btn-youtube {
+                    color: white;
+                    background-color: #dc2626;
+                    padding: 7px;
+                    padding-inline: 15px;
+                    border-radius: 7px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        margin: 0;
+                        margin-left: 4px;
+                        padding: 0;
+                    }
+                }
+
+                .btn-source {
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    background-color: #21ba75;
+                    padding: 7px;
+                    padding-inline: 15px;
+                    border-radius: 7px;
+                    cursor: pointer;
+
+                    p {
+                        margin: 0;
+                        margin-left: 4px;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+
+        .Ingredients {
+            padding: 20px;
+            background-color: white;
+            border-radius: 4%;
+
+            max-height: fit-content;
+            // max-height: 70dvh;
+
+            h2 {
+                font-size: 32px;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 95%;
+                    height: 5px;
+                    background-color: #E5E7EB;
+                    bottom: -5px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            .content {
+                .Ingredient {
+                    display: flex;
+                    justify-content: space-between;
+                    position: relative;
+                    margin-top: 20px;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 95%;
+                        height: 1px;
+                        background-color: #E5E7EB;
+                        bottom: -10px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+
+            }
+        }
+    }
+}

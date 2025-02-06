@@ -1,8 +1,17 @@
-# React + Vite
+Overview:
+This project is a modern, fully responsive recipe web application built with React and Vite. It allows users to explore various recipes, view detailed ingredients, and enjoy a seamless navigation experience. The UI is clean and user-friendly, providing an engaging way to discover new meals.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features:
+Recipe Listing: View a variety of food recipes with beautiful card layouts.
+Ingredient Details: Explore detailed ingredients for each recipe.
+Responsive Design: Optimized for different screen sizes using Tailwind CSS.
+Data Fetching: Efficient API integration with Axios and React Query for fetching data dynamically.
+Routing: Smooth page transitions powered by React Router DOM.
+Icons: Enhanced user interface with Font Awesome icons.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tech Stack
+Framework: React + Vite
+Styling: Tailwind CSS, Sass
+API Handling: Axios, React Query
+Routing: React Router DOM
+Icons: Font Awesome
